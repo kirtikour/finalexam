@@ -11,18 +11,34 @@ export function TrafficlightSimulator() {
       });
     }, 3000);
     return () => clearInterval(interval);
-  }, []);
+  }, [currentLight]);
 
   return (
     <>
       <div className="recatangle">
-        <div className="circle" id="red">
+        <div
+          className="circle"
+          id="red"
+          style={{ backgroundColor: currentLight === "red" ? "red" : "gray" }}
+        >
           red
         </div>
-        <div className="circle" id="green">
+        <div
+          className="circle"
+          id="green"
+          style={{
+            backgroundColor: currentLight === "green" ? "green" : "gray",
+          }}
+        >
           green
         </div>
-        <div className="circle" id="yellow">
+        <div
+          className="circle"
+          id="yellow"
+          style={{
+            backgroundColor: currentLight === "yellow" ? "yellow" : "gray",
+          }}
+        >
           yellow
         </div>
       </div>

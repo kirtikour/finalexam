@@ -18,12 +18,3 @@
   justify-content: center;
   margin: 20px auto;
 }
-.circle:hover {
-  background-color: #e0e0e0;
-  transition: background-color 0.3s ease;
-}
-.circle p {
-  margin: 0;
-  font-size: 1.2em;
-  color: #333;
-}
