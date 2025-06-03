@@ -68,7 +68,7 @@ export function TrafficlightSimulator() {
           id="red"
           style={{ backgroundColor: currentLight === "red" ? "red" : "gray" }}
         >
-          red
+          red1
         </div>
         <div
           className={`circle${currentLight === "green" ? " active" : ""}`}
